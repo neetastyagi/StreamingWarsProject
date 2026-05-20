@@ -1,3 +1,17 @@
+## StreamingWarsProject
+
+A Java-based web application that simulates a streaming service marketplace where multiple streaming platforms can license and sell content from studios to users through different subscription models.
+
+### Project Overview
+
+**Language:** Java  
+**Repository:** neetastyagi/StreamingWarsProject  
+**Type:** Full-stack web application  
+
+This project implements a comprehensive system for managing interactions between streaming services, studios, and users in a competitive streaming market. The application includes role-based access control with different functionalities for admins, streaming services, studios, and account users.
+
+---
+
 ## Streaming Wars 
 
 
@@ -82,7 +96,7 @@ view previous, current, total spending
 
 ### Authentication
 Spring security authentication is achieved in class SecurityConfig.\
-Class is annotated with @EnableWebSecurity to enable Spring Security’s web security support\
+Class is annotated with @EnableWebSecurity to enable Spring Security's web security support\
 The configure(HttpSecurity) method defines which URL paths should be secured and which should not. Specifically, the /login 
 and /registration paths are configured to not require any authentication, since all users should be able to reach those pages.\
 All other paths will be authenticated.\
@@ -94,4 +108,3 @@ After logging in to the application users are redirected based on their roles\
 In class UserController method redirectOnRole(Authentication auth), based on the role stored in auth, the users will be 
 redirected to their pages.\
 For example admin gets redirected to /admin page.
-
